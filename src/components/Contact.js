@@ -11,8 +11,8 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="card card-body mb-3">
-        <h4>{this.props.name}</h4>
-        <ul className="list-group">
+        <h4 style={{ color: "#4d4d4d" }}>{this.props.name}</h4>
+        <ul className="list-group" style={{ color: "grey" }}>
           <li className="list-group-item">Email : {this.props.email}</li>
           <li className="list-group-item">Phone No: {this.props.phone}</li>
         </ul>
