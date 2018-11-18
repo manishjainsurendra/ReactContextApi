@@ -29,14 +29,14 @@ export class Provider extends Component {
         },
         {
           id: 2,
-          name: "abhi",
-          email: "abhi@gmail.com",
+          name: "kiran",
+          email: "kiran@gmail.com",
           phone: "2222-222-222"
         },
         {
           id: 3,
-          name: "akash",
-          email: "akash@gmail.com",
+          name: "kiran",
+          email: "kiran@gmail.com",
           phone: "3333-333-333"
         }
       ],

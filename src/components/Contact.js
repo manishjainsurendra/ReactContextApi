@@ -51,6 +51,7 @@ export default class Contact extends Component {
           );
         }}
       </Consumer>
+
       // <div className="card card-body mb-3">
       //   <h4>
       //     {this.props.name}{" "}
