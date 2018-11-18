@@ -3,14 +3,17 @@ import "./App.css";
 import Header from "./components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contacts from "./components/Contacts";
+import { Provider } from "./Context";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header branding="Contact Manager" />
-        <Contacts />
-      </div>
+      <Provider>
+        <div className="App">
+          <Header branding="Contact Manager" />
+          <Contacts />
+        </div>
+      </Provider>
     );
   }
 }
