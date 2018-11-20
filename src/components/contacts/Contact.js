@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Consumer } from "../Context";
+import { Consumer } from "../../Context";
 
 export default class Contact extends Component {
   constructor(props) {
@@ -51,28 +51,6 @@ export default class Contact extends Component {
           );
         }}
       </Consumer>
-
-      // <div className="card card-body mb-3">
-      //   <h4>
-      //     {this.props.name}{" "}
-      //     <i
-      //       className="fas fa-sort-down"
-      //       onClick={() => this.setState({ show: !this.state.show })}
-      //       style={{ cursor: "pointer" }}
-      //     />{" "}
-      //     <i
-      //       className="fas fa-times"
-      //       style={{ color: "red", cursor: "pointer", float: "right" }}
-      //       onClick={() => this.props.onDelete(this.props.id)}
-      //     />
-      //   </h4>
-      //   {this.state.show && (
-      //     <ul className="list-group">
-      //       <li className="list-group-item">Email : {this.props.email}</li>
-      //       <li className="list-group-item">Phone No: {this.props.phone}</li>
-      //     </ul>
-      //   )}
-      // </div>
     );
   }
 }

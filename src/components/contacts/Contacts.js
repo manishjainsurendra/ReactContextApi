@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 import Contact from "./Contact";
-import { Consumer } from "../Context";
+import { Consumer } from "../../Context";
 
 export default class Contacts extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   onDelete = id => {
     const newArray = this.state.contacts.filter(contact => contact.id !== id);
     this.setState({
@@ -36,19 +32,5 @@ export default class Contacts extends Component {
         }}
       </Consumer>
     );
-
-    //   <div className="container">
-    //     {this.state.contacts.map(contact => (
-    //       <Contact
-    //         key={contact.id}
-    //         id={contact.id}
-    //         name={contact.name}
-    //         email={contact.email}
-    //         phone={contact.phone}
-    //         onDelete={this.onDelete}
-    //       />
-    //     ))}
-    //   </div>
-    // );
   }
 }
