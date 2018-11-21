@@ -33,6 +33,7 @@ export default class AddContact extends React.Component {
     }
     this.setState({ id: "", name: "", email: "", phone: "", error: {} });
     dispatch({ type: "ADD_CONTACT", payload: this.state });
+    this.props.history.push("/");
   };
 
   render() {
