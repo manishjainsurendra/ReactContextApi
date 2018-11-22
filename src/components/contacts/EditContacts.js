@@ -3,15 +3,34 @@ import { Consumer } from "../../Context";
 import FormInput from "./FormInput";
 import axios from "axios";
 
-export default class AddContact extends React.Component {
+export default class EditContacts extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      id: null,
       name: "",
       email: "",
       phone: "",
       error: {}
     };
+  }
+
+  componentDidMount() {
+    axios
+      .get(
+        `https://jsonplaceholder.typicode.com/users/${
+          this.props.match.params.id
+        }`
+      )
+      .then(responce =>
+        this.setState({
+          id: responce.data.id,
+          name: responce.data.name,
+          email: responce.data.email,
+          phone: responce.data.phone
+        })
+      )
+      .catch(error => console.log(error));
   }
 
   onChange = e => {
