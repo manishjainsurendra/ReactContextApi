@@ -44,3 +44,9 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 Run this project [https://kiranninave.github.io/contact-manager](https://kiranninave.github.io/contact-manager)
+
+# I have updated this project on new repo [https://github.com/KiranNinave/contact-manager-redux](https://github.com/KiranNinave/contact-manager-redux) which support network request 
+
+# run updated project [https://kiranninave.github.io/contact-manager-redux/](https://kiranninave.github.io/contact-manager-redux/) 
+
+# note afer running you will get 404 error on github so kindly click on home link on navbar then it will works fine
